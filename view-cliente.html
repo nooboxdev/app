@@ -53,93 +53,87 @@
     <main>
       <div id="client-view">
         <form action="#" id="update-client">
-          <table width="100%" cellpadding="2" cellspacing="2">
-            <tr>
-              <td>Tipo do Documento:</td>
-              <td>CPF/CNPJ</td>
-            </tr>
-            <tr>
-              <td><select id="doc-type">
-                <option value="cpf">CPF</option>
-                <option value="cnpj">CNPJ</option>
-              </select>
-            </td>
-              <td><input type="text" placeholder="00.000.000/0001-00"></td>
-            </tr>
-            <tr>
-              <td>Razão Social</td>
-            </tr>
-            <tr>
-              <td><input type="text" placeholder="Nome da Empresa/Razão Social"></td>
-            </tr>
-            <tr>
-              <td>Incrição Estadual</td>
-              <td>
-                Sem Incrição Estadual: <input type="checkbox" />
-              </td>
-            </tr>
-            <tr>
-              <td><input type="text" placeholder="0.00.00"></td>
-              <td>
-                <select>
-                  <option value="isento">Isento</option>
-                  <option value="nao-contribuinte">Não Contribuinte</option>
-                </select>
-            </td>
-            </tr>
-            <tr>
-              <td>Email</td>
+          <span class="form-view-line">
+            <label>Tipo do Documento:</label>
+            <select id="doc-type">
+              <option value="cnpj">CNPJ</option>
+              <option value="cpf">CPF</option>
+            </select>
+          </span>
+          <span class="form-view-line">
+            <label>CPF/CNPJ</label>
+            <input type="text" placeholder="00.000.000/0001-00">
+          </span>
+          <span class="form-view-line">
+            <label>Razão Social</label>
+            <input type="text" placeholder="Nome da Empresa/Razão Social">
+          </span>
+  
+          <span class="form-view-line">
+            <label>Sem Incrição Estadual:</label>
+            <input type="checkbox" />
+          </span>
+          <span class="form-view-line">
+            <label>Inscrição Estadual</label>
+            <input type="text" placeholder="0.00.00"></td>
+          </span>
+          <span class="form-view-line">
+            <label style="color:#fff ;">Não Possui IE?</label>
+            <select>
+              <option value="isento">Isento</option>
+              <option value="nao-contribuinte">Não Contribuinte</option>
+            </select>
+          </span>
+          <span class="form-view-line">
+            <label>E-mail:</label>
+            <input type="email" placeholder="seu@email.com">
+          </span>
+          <span class="form-view-line">
+            <label>Logradouro</label>
+            <input type="text" name="" id="" placeholder="Rua/Avenida">
+          </span>
+          <span class="form-view-line">
+            <label>Nº &nbsp;</label>
+            <input type="text" name="" id="" placeholder="numero do imóvel">
+          </span>
+          <span class="form-view-line">
+            <label>Complemento</label>
+            <input type="text" name="" id="" placeholder="esquina, ao lado ...">
+          </span>
+          <span class="form-view-line">
+            <label>Bairro|Distrito</label>
+            <input type="text" name="" id="" placeholder="Ex. Coloninha">
+          </span>
+          <span class="form-view-line">
+            <label>CEP</label>
+            <input type="text" name="" id="" placeholder="00.000-000">
+          </span>
+          <span class="form-view-line">
+            <label>Fone</label>
+            <input type="text" name="" id="" placeholder="(00) 0 0000-0000">
+          </span>
+          <span class="form-view-line">
+            <label>Estado|UF</label>
+            <input type="text" name="" id="" placeholder="Santa Catarina">
+          </span>
+          <span class="form-view-line">
+            <label>Cidade</label>
+            <input type="text" name="" id="" placeholder="Araranguá">
+          </span>
+          <span class="form-view-line">
+            <label>País</label>
+            <input type="text" name="" id=""  value="BRASIL">
+          </span>
+          <span class="form-view-line">
+            <label></label>
+            <button type="submit" onclick="#">update</button>
+          </span>
+          </span>
 
-            </tr>
-            <tr>
-              <td><input type="email" placeholder="seu@email.com"></td>
-
-            </tr>
-            <tr>
-              <td>Logradouro:</td>
-              <td>Número:</td>
-            </tr>
-            <tr>
-              <td><input type="text" name="" id="" placeholder="Rua/Avenida"></td>
-              <td><input type="text" name="" id="" placeholder="numero do imóvel"></td>
-            </tr>
-            <tr>
-              <td>Complemento</td>
-              <td>Bairro</td>
-            </tr>
-            <tr>
-              <td><input type="text" name="" id="" placeholder="esquina, ao lado ..."></td>
-              <td><input type="text" name="" id="" placeholder="Ex. Coloninha"></td>
-            </tr>
-            <tr>
-              <td>CEP</td>
-              <td>Fone</td>
-            </tr>
-            <tr>
-              <td><input type="text" name="" id="" placeholder="00.000-000"></td>
-              <td><input type="text" name="" id="" placeholder="(00) 0 0000-0000"></td>
-            </tr>
-            <tr>
-              <td>Estado/UF:</td>
-              <td>Município</td>
-            </tr>
-            <tr>
-              <td><input type="text" name="" id="" placeholder="Santa Catarina"></td>
-              <td><input type="text" name="" id="" placeholder="Araranguá"></td>
-            </tr>
-            <tr>
-              <td>País:</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td><input type="text" name="" id=""  value="BRASIL"></td>
-              <td><button type="submit" onclick="#">update</button></td>
-            </tr>
-          </table>
+          
+        
+        
         </form>
-          </tbody>
-        </table>
-
       </div>
     </main>
   </body>

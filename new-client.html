@@ -17,7 +17,7 @@
       <nav>
         <ul>
           <li><a href="index.html"><img src="./assets/img/logo.jpg" width="50px" style="margin-top: 10px; margin-left: 10px;" /></a></li>
-          <li>
+          <li  class="active">
             <a href="clientes.html" title="Clientes" >
               <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"><path d="M20 2H8a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm-6 2.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM19 15H9v-.25C9 12.901 11.254 11 14 11s5 1.901 5 3.75V15z"></path><path d="M4 8H2v12c0 1.103.897 2 2 2h12v-2H4V8z"></path></svg>
             </a>
@@ -42,7 +42,7 @@
               <svg xmlns="http://www.w3.org/2000/svg" width="80%" height="80%" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"><path d="M21 5c0-1.103-.897-2-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V5zM5 19V5h14l.002 14H5z"></path><path d="M7 7h1.998v2H7zm4 0h6v2h-6zm-4 4h1.998v2H7zm4 0h6v2h-6zm-4 4h1.998v2H7zm4 0h6v2h-6z"></path></svg>
             </a>
           </li>
-          <li  class="active">
+          <li>
             <a href="sistema.html" title="Sistema">
               <svg xmlns="http://www.w3.org/2000/svg" width="80%" height="80%" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"><path d="M13 2.051V11h8.949c-.47-4.717-4.232-8.479-8.949-8.949zm4.969 17.953c2.189-1.637 3.694-4.14 3.98-7.004h-8.183l4.203 7.004z"></path><path d="M11 12V2.051C5.954 2.555 2 6.824 2 12c0 5.514 4.486 10 10 10a9.93 9.93 0 0 0 4.255-.964s-5.253-8.915-5.254-9.031A.02.02 0 0 0 11 12z"></path></svg>
             </a>
@@ -51,24 +51,86 @@
       </nav>
     </aside>
     <main>
-      <div class="coluns">
-        <a href="users.html">
-        <div class="backups-coluns">
-           <svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 24 24" style="fill: rgba(90, 89, 89, 1);transform: ;msFilter:;"><path d="M17.988 22a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h11.988zM9 5h6v2H9V5zm5.25 6.25A2.26 2.26 0 0 1 12 13.501c-1.235 0-2.25-1.015-2.25-2.251S10.765 9 12 9a2.259 2.259 0 0 1 2.25 2.25zM7.5 18.188c0-1.664 2.028-3.375 4.5-3.375s4.5 1.711 4.5 3.375v.563h-9v-.563z"></path></svg>
-          <p>Usuários</p>
-        </div>
-      </a>
-
+      <div id="client-view">
+        <form action="#" id="update-client">
+          <span class="form-view-line">
+            <label>Tipo do Documento:</label>
+            <select id="doc-type">
+              <option value="cnpj">CNPJ</option>
+              <option value="cpf">CPF</option>
+            </select>
+          </span>
+          <span class="form-view-line">
+            <label>CPF/CNPJ</label>
+            <input type="text" placeholder="00.000.000/0001-00">
+          </span>
+          <span class="form-view-line">
+            <label>Razão Social</label>
+            <input type="text" placeholder="Nome da Empresa/Razão Social">
+          </span>
+  
+          <span class="form-view-line">
+            <label>Sem Incrição Estadual:</label>
+            <input type="checkbox" />
+          </span>
+          <span class="form-view-line">
+            <label>Inscrição Estadual</label>
+            <input type="text" placeholder="0.00.00"></td>
+          </span>
+          <span class="form-view-line">
+            <label style="color:#fff ;">Não Possui IE?</label>
+            <select>
+              <option value="isento">Isento</option>
+              <option value="nao-contribuinte">Não Contribuinte</option>
+            </select>
+          </span>
+          <span class="form-view-line">
+            <label>E-mail:</label>
+            <input type="email" placeholder="seu@email.com">
+          </span>
+          <span class="form-view-line">
+            <label>Logradouro</label>
+            <input type="text" name="" id="" placeholder="Rua/Avenida">
+          </span>
+          <span class="form-view-line">
+            <label>Nº &nbsp;</label>
+            <input type="text" name="" id="" placeholder="numero do imóvel">
+          </span>
+          <span class="form-view-line">
+            <label>Complemento</label>
+            <input type="text" name="" id="" placeholder="esquina, ao lado ...">
+          </span>
+          <span class="form-view-line">
+            <label>Bairro|Distrito</label>
+            <input type="text" name="" id="" placeholder="Ex. Coloninha">
+          </span>
+          <span class="form-view-line">
+            <label>CEP</label>
+            <input type="text" name="" id="" placeholder="00.000-000">
+          </span>
+          <span class="form-view-line">
+            <label>Fone</label>
+            <input type="text" name="" id="" placeholder="(00) 0 0000-0000">
+          </span>
+          <span class="form-view-line">
+            <label>Estado|UF</label>
+            <input type="text" name="" id="" placeholder="Santa Catarina">
+          </span>
+          <span class="form-view-line">
+            <label>Cidade</label>
+            <input type="text" name="" id="" placeholder="Araranguá">
+          </span>
+          <span class="form-view-line">
+            <label>País</label>
+            <input type="text" name="" id=""  value="BRASIL">
+          </span>
+          <span class="form-view-line">
+            <label></label>
+            <button type="submit" onclick="#">Cadastrar</button>
+          </span>
+          </span>
+        </form>
       </div>
-      <div class="coluns">
-        <a href="backups.html">
-        <div class="backups-coluns">
-            <svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 24 24" style="fill: rgba(90, 89, 89, 1);transform: ;msFilter:;"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6h-3v2H9v2h2v2H9v2h2v8H7v-6h2v-2H7V8h2V6H7V4h2V2H6zm7 2 5 5h-5V4z"></path><path d="M8 15h2v2H8z"></path></svg>
-            <p>Backups</p>
-        </div>
-      </a>
-      </div>
-</main>
-
+    </main>
   </body>
 </html>
